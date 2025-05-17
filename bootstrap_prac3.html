@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-prac3.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Blog Top Page</title>
@@ -43,21 +44,22 @@
 
     <!-- ヘッダ -->
     <!-- 背景色: light, 上下にpadding: 5 を指定してください -->
-    <div class="">
+    <div class="bg-light py-5">
       <!-- グリッドシステム container -->
       <!-- 文字の位置を指定してください。スマホの画面サイズ: 画面中央  それ以上の画面サイズ: 左寄せ -->
-      <div class="container">
+      <div class="container text-md-left text-center">
           <!-- row -->
           <div class="row">
             <!-- col -->
             <!-- h1ブログタイトル col-12 -->
-            <h1 class="">Title of a longer<br />featured blog post</h1>
+            <h1 class="col-12">Title of a longer<br />featured blog post</h1>
             <!-- pタグ スマホ画面: col-12, それ以上の画面: col-6, 上下にpadding: 2  -->
-            <p class="">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+            <p class="col-12 col-md-6 py-2">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
             <!-- ボタン2つ を入れるdiv スマホ画面: 中央寄せ、 それ以上の画面: 左寄せ を指定してください-->
-            <div class="">
+            <div class="col-12 justify-content-center justify-content-md-strat">
               <!-- 見本を参考にボタンを作成してください -->
-
+              <button class="btn bg-primary text-white">Main call to action</button>
+              <button class="btn bg-secondary text-white ml-3">Secondary action</button>
             </div>
           </div>
       </div>
@@ -65,25 +67,25 @@
 
     <!-- 右側に画像のsection (スマホ画面は上に画像 下にテキスト)-->
     <!-- グリッドシステム container 上下にpadding: 4 をつけてください -->
-    <div class="container">
+    <div class="container py-4">
       <!-- row -->
       <div class="row">
         <!-- col 大きい画面の時に画像が右に来るよう order で順序を制御しましょう -->
         <!-- 詳しくはこちら https://getbootstrap.com/docs/4.4/utilities/flex/#order を参考にしてください -->
         <!-- 右側中央に画像は配置してください -->
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 order-md-2 d-flex justify-content-center">
           <div class="bg-info img-size"></div>
         </div>
         <!-- col -->
         <!-- orderで順序を制御し、文字の位置はスマホ画面では中央、それ以上では左寄せにしてください -->
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 text-center text-md-left order-md-1">
           <!-- グリッドシステムの入れ子 row -->
           <!-- 上側のpaddingを スマホ画面では 3、それ以上の画面では0を指定してください -->
-          <div class="row">
+          <div class="row pt-3 pt-md-0">
             <!-- col h2タグ-->
-            <h2 class="">First featurette heading. It'll blow your mind.</h2>
+            <h2 class="col-12">First featurette heading. It'll blow your mind.</h2>
             <!-- col pタグ-->
-            <p class="">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="col-12">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           </div>
         </div>
       </div>
@@ -92,21 +94,21 @@
     <!-- 左側に画像のsection (スマホ画面は上に画像) -->
     <!-- 上と同じスタイルで左に画像が来るようBootstrapのクラスをつけましょう -->
     <!-- グリッドシステム container -->
-    <div class="">
+    <div class="container py-4">
       <!-- row -->
-      <div class="">
+      <div class="row">
         <!-- col -->
-        <div class="">
+        <div class="col-12 col-md-6 d-flex justify-content-center order-md-1">
           <div class="bg-warning img-size"></div>
         </div>
         <!-- col -->
-        <div class="">
+        <div class="col-12 col-md-6 text-center text-md-left order-md-2">
           <!-- row -->
-          <div class="">
+          <div class="row pt-3 pt-md-0">
             <!-- col h2タグ-->
-            <h2 class="">First featurette heading. It'll blow your mind.</h2>
+            <h2 class="col-12">First featurette heading. It'll blow your mind.</h2>
             <!-- col pタグ-->
-            <p class="">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="col-12">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           </div>
         </div>
       </div>
